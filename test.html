@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tooltip Example</title>
+<style>
+  .tooltip {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  .tooltip:hover::after {
+    opacity: 1;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="tooltip-container">
+  <span class="tooltip" data-tooltip="Tooltip text 1">Element 1</span>
+  <span class="tooltip" data-tooltip="Tooltip text 2">Element 2</span>
+  <span class="tooltip" data-tooltip="Tooltip text 3">Element 3</span>
+</div>
+
+<script src="script.js">
+  const tooltips = document.querySelectorAll('.tooltip');
+
+  tooltips.forEach(tooltip => {
+    tooltip.addEventListener('mouseenter', () => {
+      tooltip.setAttribute('data-tooltip-visible', 'true');
+    });
+    tooltip.addEventListener('mouseleave', () => {
+      tooltip.removeAttribute('data-tooltip-visible');
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>John Arthur Cafe</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+ <!--social media--> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--cart--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html"><img class="logo" src="images/logo/logo.png"></a>
+      <nav>
+        <ul>
+          <a href="pages/menu.html">Menu</a>
+          <a href="pages/shop.html">Shop</a>
+          <a href="pages/about.html">About</a>
+          <a href="pages/contact_us.html">Contact</a>
+        </ul>   
+     </nav>
+      <img class="sign" src="../images/icons/shopping-cart.svg" width="42px">
+      <img class="sign" src="../images/icons/user.svg" width="40px">
+    </div>
+  </header>
+
+  <article>
+    <Section class="section1">
+      <div class="slides">
+        <img class="mySlides" src="images/jacheader copy.jpg">
+        <img class="mySlides" src="images/servicesshopsofficesheader2.jpg" >
+        <img class="mySlides" src="images/jac copy1.jpg" >
+        <img class="mySlides" src="images/bu1.jpg" >
+
+      <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 5000); // Change image every 5 seconds
+      }
+      </script>
+      </div>
+  </section>
+
+  <section class="section2">
+    <a href="pages/menu.html"><h2>Menu</h2></a>
+    <div class="food">
+      <div class="food1">
+       <h3>Food</h3>
+        <img class="bagel" src="images/bagel_PNG1.png">
+      </div>
+      <div class="food2">
+        <h3>Beverages</h3>
+        <img class="drink" src="images/Snapple-Juice.png">
+      </div> 
+      <!--<a href="../pages/menu.html"><img class="bagel" src="images/bagels.jpg" width="20%"></a>
+      <img class="drink" src="images/drinks.jpg" width="20%">-->
+    </div>
+    
+  </section>
+    <p></p>
+  <section class="section3">
+    <a href="pages/shop.html">
+      <!--<h2>Shop Now</h2>-->
+    </a>
+    <img class="cup" src="images/mockup.jpg">
+  </section>
+  </article>
+
+  <footer>
+    <nav>
+      <a href="pages/menu.html">Menu</a>
+      <a href="pages/shop.html">Shop</a>
+      <a href="pages/about.html">About</a>
+      <a href="pages/contact_us.html">Contact</a>
+    </nav>
+
+    <div class="socials">
+      <img src="images/socials/facebook.svg">
+      <img src="images/socials/twitter.svg">
+      <img src="images/socials/instagram.svg">
+    </div>
+  </footer>
+</body>
+
+</html>
