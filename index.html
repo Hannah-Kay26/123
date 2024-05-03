@@ -3,11 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>John Arthur Cafe</title>
   <link href="css/style.css" rel="stylesheet" type="text/css" />
- <!--social media--> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!--cart--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--social media-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--cart-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -20,8 +22,8 @@
           <a href="pages/shop.html">Shop</a>
           <a href="pages/about.html">About</a>
           <a href="pages/contact_us.html">Contact</a>
-        </ul>   
-     </nav>
+        </ul>
+      </nav>
       <img class="sign" src="../images/icons/shopping-cart.svg" width="42px">
       <img class="sign" src="../images/icons/user.svg" width="40px">
     </div>
@@ -30,68 +32,79 @@
   <article>
     <Section class="section1">
       <div class="slides">
-        <img class="mySlides" src="images/jacheader copy.jpg">
-        <img class="mySlides" src="images/servicesshopsofficesheader2.jpg" >
-        <img class="mySlides" src="images/jac copy1.jpg" >
-        <img class="mySlides" src="images/bu1.jpg" >
+        <img class="mySlides" src="images/jacheader.jpg">
+        <img class="mySlides" src="images/servicesshopsofficesheader2.jpg">
+        <img class="mySlides" src="images/bucampus.jpg">
 
-      <script>
-      var myIndex = 0;
-      carousel();
+        <script>
+          var myIndex = 0;
+          carousel();
 
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";  
-        }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}    
-        x[myIndex-1].style.display = "block";  
-        setTimeout(carousel, 5000); // Change image every 5 seconds
-      }
-      </script>
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 5000); // Change image every 5 seconds
+          }
+        </script>
       </div>
-  </section>
+    </section>
 
-  <section class="section2">
-    <a href="pages/menu.html"><h2>Menu</h2></a>
-    <div class="food">
-      <div class="food1">
-       <h3>Food</h3>
-        <img class="bagel" src="images/bagel_PNG1.png">
+    <section class="section2">
+      <a href="pages/menu.html">
+        <h2>Menu</h2>
+      </a>
+      <div class="food">
+        <div class="food1">
+          <a
+            href="https://6662b1d0-0997-4d37-8d49-d822e1b4c0fd-00-1sd33yzqherek.kirk.replit.dev/pages/menu.html#fooddrink">
+            <h3>Food</h3>
+          </a>
+          <img class="bagel" src="images/muffin.png">
+        </div>
+        <div class="food2">
+          <a
+            href="https://6662b1d0-0997-4d37-8d49-d822e1b4c0fd-00-1sd33yzqherek.kirk.replit.dev/pages/menu.html#drinkfood">
+            <h3>Drinks</h3>
+          </a>
+          <img class="drink" src="images/Snapple-Juice.png">
+        </div>
       </div>
-      <div class="food2">
-        <h3>Beverages</h3>
-        <img class="drink" src="images/Snapple-Juice.png">
-      </div> 
-      <!--<a href="../pages/menu.html"><img class="bagel" src="images/bagels.jpg" width="20%"></a>
-      <img class="drink" src="images/drinks.jpg" width="20%">-->
-    </div>
-    
-  </section>
-    <p></p>
-  <section class="section3">
-    <a href="pages/shop.html">
-      <!--<h2>Shop Now</h2>-->
-    </a>
-    <img class="cup" src="images/mockup.jpg">
-  </section>
+    </section>
+
+    <section class="section3">
+      <a href="pages/shop.html">
+        <h2 class="shop"">Shop Now!</h2></a>
+    <img class=" cup" src="images/beans.png">
+    </section>
   </article>
 
   <footer>
+    <div class="box">
+    <div class="navs">
     <nav>
       <a href="pages/menu.html">Menu</a>
       <a href="pages/shop.html">Shop</a>
       <a href="pages/about.html">About</a>
       <a href="pages/contact_us.html">Contact</a>
     </nav>
+    </div>
 
-    <div class="socials">
+   <div class="socials">
       <img src="images/socials/facebook.svg">
       <img src="images/socials/twitter.svg">
       <img src="images/socials/instagram.svg">
     </div>
+
+    <div class="copy">
+    <small>Copyright © 2024 John Arthur Cafe. All Rights Reserved.</small>
+    </div>
+  </div>
   </footer>
 </body>
 
