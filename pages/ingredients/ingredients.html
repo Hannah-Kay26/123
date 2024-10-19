@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingredients - Buzz Bites</title>
+  <link href="../css/main.css" rel="stylesheet" type="text/css">
+  <link href="../css/ingredients.css" rel="stylesheet" type="text/css">
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-template-areas:
+        "tea" "honey" "grains"
+        "section" "article" "aside";
+    }
+
+    .first_column {
+     /* border: 1px solid red;*/
+      grid-area: section;
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .second_column {
+     /* border: 1px solid grey;*/
+      grid-area: article;
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    .third_column {
+      /*border: 1px solid yellow;*/
+      grid-area: aside;
+      grid-column: 3;
+      grid-row: 2;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="../index.html"><img class="logo" src="../images/logo.svg"></a>
+
+    <nav> <!-- "flex container" for nav links-->
+      <div class="trianglebutton">
+        <div class="triangle"></div>
+        <a class="about" href="../about/about.html">About Us</a>
+      </div>
+
+      <a href="ingredients/ingredients.html">Ingredients</a>
+
+      <div class="dropmenu">
+        <a href="../products/products.html">Products</a>
+        <div class="dropdown1">
+          <a href="../products/honey.html">Honey Buzz Bites</a>
+          <a href="../products/coco.html">Coco Buzz Bites</a>
+          <a href="../products/apple.html">Apple Buzz Bites</a>
+        </div>
+      </div>
+
+      <div class="dropmenu">
+        <a href="#">Buy Now</a>
+        <div class="dropdown2">
+          <a href="../products/products.html">Online Store</a>
+          <a href="../buynow/retail.html">Retail Locations</a>
+        </div>
+      </div>
+
+      <a href="../faq/faq.html">FAQ</a>
+    </nav>
+  </header>
+
+
+  <img class="banner" src="images/headerimage2.jpg">
+
+
+  <h1>Ingredients</h1>
+  <h2>Our Key Ingredients</h2>
+  <br></br>
+
+  <div class="container">
+    <div class="first_column">
+      <section>
+        <img class="tea" src="images/tea.png">
+        <br></br>
+        <h3>Green Tea Extract </h3>
+
+        <p>This is our main ingredient as this is where our source of caffeine from our cereal comes from. It contains
+          50mg of
+          caffeine. Green tea extract comes from the leaves of the Camellia sinensis plant and is highly concentrated.
+          It
+          contains potent antioxidants–such as flavonoids and polyphenols like epigallocatechin gallate (EGCG)–that
+          protect against cell damage and offer a variety of health benefits. Some of its health benefits are improved
+          alertness, mood, healthier skin, weight loss etc. Our green tea extract is made with all healthy ingredients
+          which are meant to improve your health. </p>
+      </section>
+    </div>
+
+
+    <div class="second_column">
+      <article>
+        <img class="honey" src="images/honey.png">
+        <br></br>
+        <h3>USDA-Approved Honey</h3>
+
+        <p>Honey is a natural product produced by bees. Honey is not only used as a nutritional product but also as
+          medicine
+          which is why we decided to make it one of our main ingredients. Our honey is 100% raw and unfiltered which
+          means it
+          preserves all the natural nutrients, enzymes, and antioxidants that make it beneficial for your health. We
+          avoid
+          any
+          processing methods that could compromise the quality of our honey like heating. Our beekeepers are committed
+          to
+          providing you with the purest and most delicious honey that we can offer. </p>
+      </article>
+    </div>
+
+
+
+    <div class="third_column">
+      <aside>
+        <img class="grains" src="images/grain.png">
+        <br></br>
+        <h3>Non-GMO Oats</h3>
+
+        <p>Our oats are sourced from an organically certified farm that grows non-genetically modified crops without the
+          use of pesticides. Our farmers are dedicated to producing healthy food. Oats have several components that are
+          good for your health. Oats have a type of soluble fiber called beta-glucan which is known to slow digestion,
+          suppress appetite and increase satiety. We also have strict systems in place
+          for testing for GMO in our products. To reduce GMO risk, our products are processed in Non-GMO Project
+          Verified facilities.</p>
+      </aside>
+    </div>
+
+  </div>
+</body>
+
+
+<footer>
+  <div class="topfooter"> <!--container for footer links and newsletter-->
+
+    <ul>
+      <li>
+        <h6>Links</h6>
+      </li>
+      <li><a href="../index.html">Home</a></li>
+      <li>Site Map</li>
+      <li><a href="../about/about.html">About Us</a></li>
+      <li><a href="../products/products.html">Products</a></li>
+    </ul>
+
+    <ul>
+      <li></li>
+      <li><a href="../faq/faq.html">FAQ</a></li>
+      <li><a href="../buynow/retail.html">Retail Locations</a></li>
+      <li>Contact Us</li>
+      <li>Privacy Policy</li>
+    </ul>
+
+
+    <div class="Newsletter">
+      <h1>What's the Buzz?</h1>
+      <p>Sign up for news updates, announcements,<br> and exclusive promotions from Buzz Bites.</p>
+      <form>
+        <input type="text" id="email" placeholder="Your email">
+        <input type="button" id="enter" value="Enter">
+      </form>
+    </div>
+
+  </div>
+  <hr>
+
+  <div class="bottomfooter">
+    <div class="Socials">
+      <img src="../images/socials/facebook.svg">
+      <img src="../images/socials/instagram.svg">
+      <img src="../images/socials/twitter.svg">
+      <img src="../images/socials/youtube.svg">
+    </div>
+
+    <small>Copyright © 2024 Buzz Bites. All Rights Reserved.</small>
+  </div>
+</footer>
+
+</html>
